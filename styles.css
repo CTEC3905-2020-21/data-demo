@@ -3,7 +3,6 @@ body {
 	font-family: "New Tegomin", sans-serif;
 	max-width: 700px;
 	margin: 0 auto;
-	text-align: center;
 }
 img {
 	border-radius: 50%;
@@ -11,6 +10,7 @@ img {
 }
 
 h2 {
+	text-align: center;
 	margin-top: 0;
 }
 
