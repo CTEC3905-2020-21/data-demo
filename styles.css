@@ -3,6 +3,7 @@ body {
 	font-family: "New Tegomin", sans-serif;
 	max-width: 700px;
 	margin: 0 auto;
+	padding: 0 1em
 }
 img {
 	border-radius: 50%;
