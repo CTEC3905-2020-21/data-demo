@@ -8,7 +8,9 @@ body {
 main, nav, header {
 	padding: 1rem;
 }
+
 nav {
+	font-size: 1.4em;
 	background-color: hsl(30, 50%, 50%);
 }
 
