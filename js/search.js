@@ -22,13 +22,14 @@ query.addEventListener('change', ev => {
 
 function buildResultFromData(data) {
 	const li = document.createElement('li');
-	const span = document.createElement('span');
+	const a = document.createElement('a');
 	const img = document.createElement('img');
 
 	img.alt = `picsum image ${data.imgId}`;
 	img.src = `https://picsum.photos/id/${data.imgId}/50`;
-	span.textContent = data.title;
+	a.textContent = data.title;
+	a.href = `article.html?id=${data.id}`;
 	li.appendChild(img);
-	li.appendChild(span);
+	li.appendChild(a);
 	return li;
 }
