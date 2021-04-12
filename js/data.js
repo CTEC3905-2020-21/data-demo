@@ -37,24 +37,3 @@ const articleData = [
 		"description": "The walrus (Odobenus rosmarus) is a large flippered marine mammal with a discontinuous distribution about the North Pole in the Arctic Ocean and subarctic seas of the Northern Hemisphere. The walrus is the only living species in the family Odobenidae and genus Odobenus."
 	}
 ];
-
-function buildArticleFromData(data) {
-	const article = document.createElement("article");
-	const img = document.createElement('img');
-	const section = document.createElement("section");
-	const h2 = document.createElement('h2');
-	const p = document.createElement('p');
-
-	h2.textContent = data["title"];
-	img.alt = `picsum image ${data["imgId"]}`;
-	img.src = `https://picsum.photos/id/${data["imgId"]}/150`;
-	p.textContent = data["description"];
-
-	article.appendChild(img);
-	article.appendChild(section);
-	section.appendChild(h2);
-	section.appendChild(p);
-	return article;
-}
-
-const articles = articleData.map(buildArticleFromData).forEach(el => target.appendChild(el));
